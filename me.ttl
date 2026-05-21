@@ -1,0 +1,66 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+
+# ── Web ID Document ───────────────────────────────────────────────────────────
+
+<https://jeremycaine.github.io/me.ttl>
+    rdf:type        foaf:PersonalProfileDocument ;
+    foaf:maker      <https://jeremycaine.github.io/me.ttl#me> ;
+    foaf:primaryTopic <https://jeremycaine.github.io/me.ttl#me> ;
+    dct:title       "Jeremy Caine – Web ID"@en ;
+    cc:license      <https://creativecommons.org/licenses/by/4.0/> .
+
+# ── Person ────────────────────────────────────────────────────────────────────
+
+<https://jeremycaine.github.io/me.ttl#me>
+    rdf:type          foaf:Person ;
+
+    foaf:name         "Jeremy Caine"@en ;
+
+    foaf:img          <https://github.com/jeremycaine.png> ;
+    foaf:depiction    <https://github.com/jeremycaine.png> ;
+
+    foaf:homepage     <https://jeremycaine.github.io/> ;
+    foaf:page         <https://jeremycaine.github.io/> ;
+    foaf:isPrimaryTopicOf <https://jeremycaine.github.io/> ;
+
+    foaf:weblog       <https://medium.com/@jeremycaine> ;
+    foaf:workInfoHomepage <https://www.linkedin.com/in/jeremycaine/> ;
+
+    foaf:account      <https://github.com/jeremycaine> ;
+    foaf:account      <https://www.linkedin.com/in/jeremycaine/> ;
+    foaf:account      <https://medium.com/@jeremycaine> ;
+    foaf:account      <https://bsky.app/profile/jeremycaine.bsky.social> ;
+
+    owl:sameAs        <https://github.com/jeremycaine> ;
+    schema:sameAs     <https://www.linkedin.com/in/jeremycaine/> ;
+
+    cc:license        <https://creativecommons.org/licenses/by/4.0/> .
+
+# ── Online Accounts ───────────────────────────────────────────────────────────
+
+<https://github.com/jeremycaine>
+    rdf:type          foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://github.com/> ;
+    foaf:accountName  "jeremycaine" .
+
+<https://www.linkedin.com/in/jeremycaine/>
+    rdf:type          foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://www.linkedin.com/> ;
+    foaf:accountName  "jeremycaine" .
+
+<https://medium.com/@jeremycaine>
+    rdf:type          foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://medium.com/> ;
+    foaf:accountName  "jeremycaine" .
+
+<https://bsky.app/profile/jeremycaine.bsky.social>
+    rdf:type          foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://bsky.app/> ;
+    foaf:accountName  "jeremycaine.bsky.social" .
