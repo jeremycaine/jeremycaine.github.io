@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Jeremy Caine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="meta" type="text/transform" href="profile.ttl" title="WebID Profile in Turtle">
+</head>
+<body vocab="http://xmlns.com/foaf/0.1/" typeof="Person" about="https://jeremycaine.github.io/#me">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1 property="name">Jeremy Caine</h1>
+            <p class="subtitle" property="title">Full Stack Web Developer</p>
+            
+            <img property="img" src="avatar.jpg" alt="Alex Doe's portrait" width="200">
+
+            <div class="bio">
+                <p>
+                    My 
+                    <a rel="me" href="https://jeremycaine.github.io/#me">WebID</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <article>
+                    <h3>Project Alpha</h3>
+                    <p>A decentralized application built using Solid project specifications.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect with me</h2>
+            <ul>
+                <li>Email: <a property="mbox" href="mailto:alex@example.com">alex@example.com</a></li>
+                <li>Homepage: <a property="homepage" href="https://alexdoe.example.com">alexdoe.example.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jeremy Caine.</p>
+    </footer>
+
+</body>
+</html>
